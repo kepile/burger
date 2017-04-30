@@ -7,6 +7,7 @@ var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
+  console.log("line 10 burger controller");
   burger.all(function(data) {
     var burgerObject = {
       burgers: data
@@ -17,10 +18,12 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
+  console.log("post ************ " + JSON.stringify(req.body));
+
   burger.create([
-    "name", "devoured"
+    "burger_name", "devoured"
   ], [
-    req.body.name, req.body.devoured
+    req.body.burger_name, false
   ], function() {
     res.redirect("/");
   });
