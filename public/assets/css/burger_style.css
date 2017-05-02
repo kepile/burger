@@ -1,0 +1,117 @@
+body
+{ 
+	background: -webkit-linear-gradient(left, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, yellow); /* Standard syntax (must be last)*/
+}
+
+#menu {
+	box-sizing: border-box;
+	margin-left: 2vh;
+	padding-bottom: 4vh
+    min-height: 200px;
+    background: -webkit-linear-gradient(yellow,#fcd27,white); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue,white,lightblue); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue,white,lightblue); /* Firefox 3.6 to 15 */
+    background: linear-gradient(orange, yellow); /* Standard syntax (must be last) */
+	/*font-size: 5vh;*/
+	z-index: -1;
+	/*box-sizing: border-box;*/
+}
+
+#menu li {
+	padding: 6vh;
+}
+
+#devour {
+	padding:2vh;
+	margin-right: 2vh;
+    min-height: 200px;
+    background: -webkit-linear-gradient(yellow,#fcd27,white); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightblue,white,lightblue); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightblue,white,lightblue); /* Firefox 3.6 to 15 */
+    background: linear-gradient(orange, yellow); /* Standard syntax (must be last) */
+	font-size: 1vw;
+	z-index: -1;
+	box-sizing: border-box;
+}
+
+
+
+h1
+{
+	margin-top: 0vh;
+	margin-bottom: 6vh;
+	font-weight: 900;
+	 
+	color: #371c00;
+	font-size: 8vw;
+}
+
+h2 {
+	font-size: 4vh;
+	font-weight: 200;
+}
+
+h3 {
+    font-size: 3vh;
+	position: relative;
+	top: -8vh;
+}
+li {
+	font-size: 3vh;
+	margin-bottom: 2vh;
+}
+
+#burger {
+	position: relative;
+	top: -7vh;
+	margin-left: 7vh;
+	width:25%;
+	height:auto;
+	z-index: -1;
+}
+
+
+
+.strike-through
+{
+	text-decoration: line-through;
+}
+
+
+#reset {
+	display:inline;
+	font-size: 1vw;
+}
+
+
+#burgerinp {
+	position: relative;
+	top: -8vh;
+	margin-left:5vh;
+	font-size: 2vh;
+}
+
+
+
+#animateburger {
+
+position: absolute;
+top: 40%;
+left: 5%;
+z-index: 1;
+
+    
+}
+
+#animateburger img {
+	width: 200px;
+    height: 200px;
+    
+    
+
+}
+
+

@@ -29,6 +29,15 @@ router.post("/", function(req, res) {
   });
 });
 
+router.put("/all", function(req, res) {
+
+  burger.updateall({
+    devoured: req.body.devoured
+  },  function() {
+    res.redirect("/");
+  });
+});
+
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -37,7 +46,11 @@ router.put("/:id", function(req, res) {
   burger.update({
     devoured: req.body.devoured
   }, condition, function() {
-    res.redirect("/");
+    var timer = setInterval(function(){ 
+      clearInterval(timer);
+      res.redirect("/"); 
+    }, 1000);
+    // res.redirect("/");
   });
 });
 

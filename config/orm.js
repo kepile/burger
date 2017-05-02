@@ -72,6 +72,21 @@ var orm = {
 
       cb(result);
     });
+  },
+
+    updateall: function(table, objColVals, cb) {
+    var queryString = "UPDATE " + table;
+
+    queryString += " SET ";
+    queryString += objToSql(objColVals);
+    console.log(queryString + "line 82");
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
   }
 };
 

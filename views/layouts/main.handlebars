@@ -2,10 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	
+	<meta name="viewport" content="
+	width=device-width, initial-scale=1">
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="css/burger_style.css" type="text/css" />
+
+		
 		<title>Pile of Burgers!</title>
 	</head>
 	<body>
 		{{{ body }}}
 	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		 $(document).on("click", ".animatego", function() {
+		 	var audio = $("audio")[0];
+		 	audio.play();
+		 	$("#animateburger").removeAttr('src');
+		 	console.log("appending image");
+		 	$("#animateburger").append("<img src = 'images/aburger.jpg'/>")
+		 	$("#animateburger").animate(
+		 		{left: '80%',
+			 	height: '100px',
+		        width: '100px'},
+			    "slow"
+			);
+
+		 });
+		 	
+	</script>
 </html>

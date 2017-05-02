@@ -32,7 +32,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Static directory
-app.use(express.static("./public"));
+app.use(express.static("public/assets"));
 
 // Routes =============================================================
 // Import routes and give the server access to them.
