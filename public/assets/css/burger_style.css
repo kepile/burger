@@ -11,9 +11,9 @@ body
 	margin-left: 2vh;
 	padding-bottom: 4vh
     min-height: 200px;
-    background: -webkit-linear-gradient(yellow,#fcd27,white); /* Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(lightblue,white,lightblue); /* Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(lightblue,white,lightblue); /* Firefox 3.6 to 15 */
+    background: -webkit-linear-gradient(orange, yellow); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(orange, yellow); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(orange, yellow); /* Firefox 3.6 to 15 */
     background: linear-gradient(orange, yellow); /* Standard syntax (must be last) */
 	/*font-size: 5vh;*/
 	z-index: -1;
@@ -27,7 +27,7 @@ body
 #devour {
 	padding:2vh;
 	margin-right: 2vh;
-    min-height: 200px;
+    /*min-height: 200px;*/
     background: -webkit-linear-gradient(yellow,#fcd27,white); /* Safari 5.1 to 6.0 */
     background: -o-linear-gradient(lightblue,white,lightblue); /* Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(lightblue,white,lightblue); /* Firefox 3.6 to 15 */
@@ -53,6 +53,7 @@ h2 {
 	font-size: 4vh;
 	font-weight: 200;
 }
+
 
 h3 {
     font-size: 3vh;
@@ -90,6 +91,7 @@ li {
 #burgerinp {
 	position: relative;
 	top: -8vh;
+	display: inline-block;
 	margin-left:5vh;
 	font-size: 2vh;
 }

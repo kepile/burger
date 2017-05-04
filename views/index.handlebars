@@ -11,11 +11,13 @@
     </div>
   </div>
   <div class="row"> 
-    <div class="col-md-4">
-      <h2 class="text-center">Burger Menu</h2>
+    <div class="col-md-4 ">
+      <div class = "banner">
+        <h2 class="text-center" >Burger Menu</h2>
+      </div>
          <div class = "col-md-10">
          </div>
-          <div class = "row" id = "menu">
+          <div class = "row well" id = "menu">
             <ul style="list-style: none;">
               {{#each burgers}}
                 {{#unless this.devoured}}
@@ -56,7 +58,7 @@
       <h2 class="text-center">Devoured Burgers.  YUMM!</h2>
       <div class = "col-md-10">
       </div>
-      <div class = "row" id = "devour">
+      <div class = "row well" id = "devour">
         <ul  style="list-style: none;">
           {{#each burgers}}
             {{#if this.devoured}}
